@@ -2,28 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Responsive Site</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="navbar">
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <div class="site-logo">MyWebsite</div>
+      <nav class="nav-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle" id="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
   </header>
 
-  <main>
-    <section class="content">
+  <section class="content-section">
+    <div class="container">
       <h1>Contact Us</h1>
-      <p>Get in touch with us through this contact page.</p>
-    </section>
-  </main>
+      <p>Email: contact@example.com</p>
+      <p>Phone: +91-123-456-7890</p>
+    </div>
+  </section>
 
-  <script src="script.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
+

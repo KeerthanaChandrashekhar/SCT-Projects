@@ -2,40 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Interactive Navbar</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home | Responsive Site</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="navbar">
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <div class="site-logo">MyWebsite</div>
+      <nav class="nav-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle" id="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
   </header>
 
-  <main>
-    <section class="content">
-      <h1>Welcome to Our Website</h1>
-      <p>This is the homepage of our interactive navigation menu project.</p>
-      <p>Scroll to see the navbar change style!</p>
-  
-      <!-- Repeated content to allow scrolling -->
-      <div style="margin-top: 40px;">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p>Vestibulum rutrum nisi at diam tincidunt, ac ultrices nisi fermentum.</p>
-        <p>Curabitur nec turpis ac ipsum vehicula tristique ut sit amet sapien.</p>
-        <p>Vivamus eget lectus ut lorem porttitor varius.</p>
-        <p>Suspendisse potenti. Proin nec nunc non nisi posuere feugiat.</p>
-        <p>Etiam congue massa sed lorem hendrerit, a feugiat sapien tincidunt.</p>
-        <p style="margin-bottom: 600px;">Scroll down further to see the navbar style change!</p>
+  <section class="hero-section">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Welcome to the Future</h1>
+        <p>Start exploring our responsive site. Designed for clarity, built for the web.</p>
+        <a href="#" class="btn">Get Started</a>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <script src="script.js"></script>
+  <footer class="footer">
+    <div class="container">
+      <button id="theme-toggle" class="theme-toggle">
+        <i class="far fa-moon"></i>
+        <i class="far fa-sun"></i>
+      </button>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
