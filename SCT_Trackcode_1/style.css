@@ -1,0 +1,53 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar Styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 1rem 2rem;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  z-index: 1000;
+}
+
+.navbar.scrolled {
+  background-color: #222;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00bfff;
+  transform: scale(1.1);
+}
+
+/* Dummy content for scrolling */
+.content {
+  margin-top: 100px;
+  padding: 2rem;
+  height: 1500px;
+}
+
+.nav-links a.active {
+  color: #00bfff;
+  border-bottom: 2px solid #00bfff;
+}
