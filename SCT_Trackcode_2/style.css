@@ -6,15 +6,16 @@ body {
   justify-content: center;
   height: 100vh;
   margin: 0;
-  background: #f2f2f2;
+  background: white;
 }
 
 .stopwatch {
-  background: white;
+  background: black;
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+  color: white;
 }
 
 .time {
@@ -30,6 +31,8 @@ body {
   border-radius: 0.5rem;
   cursor: pointer;
   transition: background 0.3s;
+  background-color: white;
+  color: black;
 }
 
 .buttons button:hover {
